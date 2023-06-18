@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NotesApp" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/babyblue</item>
+        <item name="colorPrimaryVariant">@color/babyblue</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/mustardgray</item>
+        <item name="colorSecondaryVariant">@color/mustardgray</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:statusBarColor">@color/brick</item>
+
+    </style>
+
+</resources>
