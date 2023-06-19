@@ -1,8 +1,9 @@
 package com.example.notesapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.notesapp.NetworkUtils;
 
-import android.net.Uri;
+
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,8 +17,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.net.NetworkInterface;
 import java.net.URL;
+
+
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     EditText edcityName;
@@ -52,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
     public void queryData(String city) throws IOException {
-        URL url = NetworkUtils.buildURL();
+        URL url = NetworkUtils.buildUrl();
         new DataTask().execute(url);
 
 
