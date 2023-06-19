@@ -13,6 +13,11 @@
         android:theme="@style/Base.Theme.NotesApp"
         tools:targetApi="31">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Base.Theme.NotesApp" />
+        <activity
             android:name=".CreateAccountActivity"
             android:exported="false" />
         <activity
