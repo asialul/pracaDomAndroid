@@ -77,6 +77,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                 new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+                        changeInProgress(false);
 
                         if (task.isSuccessful()) {
                             Toast.makeText(CreateAccountActivity.this,
@@ -86,6 +87,8 @@ public class CreateAccountActivity extends AppCompatActivity {
                             finish();
 
                         } else {
+                            Toast.makeText(CreateAccountActivity.this,
+                                    task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
 
                         }
 
