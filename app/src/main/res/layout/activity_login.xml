@@ -53,6 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:background="@drawable/rounded_corner"
             android:padding="16dp"
@@ -64,6 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:background="@drawable/rounded_corner"
             android:padding="16dp"
@@ -99,12 +101,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/brick"
             android:text="Don't have an account?"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Register"
+            android:textColor="@color/brick"
             android:textStyle="bold"
             android:id="@+id/registerTextView_btn"/>
 

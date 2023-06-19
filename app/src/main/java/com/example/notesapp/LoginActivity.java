@@ -59,11 +59,14 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (task.isSuccessful()) {
                     if (firebaseAuth.getCurrentUser().isEmailVerified()) {
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
 
+                    } else {
+                        MethodsReuse.Tosty(LoginActivity.this, "Email not verified. Verify your email.");
                     }
 
-                } else () {
-
+                } else {
+                    MethodsReuse.Tosty(LoginActivity.this, task.getException().getLocalizedMessage());
                 }
             }
         });
