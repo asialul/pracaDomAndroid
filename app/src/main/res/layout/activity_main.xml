@@ -14,27 +14,42 @@
       android:layout_height="wrap_content"
       android:orientation="vertical"
       android:gravity="center"
-      android:id="@+id/layout_main">
+      android:id="@+id/layout_main"
+      tools:ignore="MissingConstraints">
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/usa"
+        android:id="@+id/usa_main_img"
+        android:layout_marginTop="15dp"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter the name of the state."
         android:id="@+id/city_name_et"
-        android:textSize="30sp"/>
+        android:textSize="30sp"
+        android:layout_below="@+id/usa_main_img"
+        android:layout_marginTop="15dp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:outlineAmbientShadowColor="@color/mustardgray"
         android:id="@+id/submit_btn"
-        android:text="Fetch" />
+        android:text="Fetch"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Result will Show here"
         android:textSize="25sp"
+        android:layout_marginTop="10dp"
         android:id="@+id/result"/>
 
   </LinearLayout>
